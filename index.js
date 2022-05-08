@@ -8,7 +8,7 @@ const dotenv = require('dotenv')
 const app = express()
 
 // setup server port
-const port = 8080
+const port = 3005
 app.use(express.json(),cors())
 
 

@@ -17,6 +17,10 @@ app.use('/api/users', apiroute)
 
 dotenv.config()
 
+app.get('/', (req, res) => {
+    res.send("App running")
+})
+
 mongoose.connect(process.env.DB_CONNECT, {useNewUrlParser:true} )
 .then(() =>{
     console.log('Database Connected')
